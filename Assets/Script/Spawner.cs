@@ -29,8 +29,13 @@ public class Spawner : MonoBehaviour
         temp.y = pos_Y;
 
         
-        
+        if(Random.Range(0,2) > 0)
+        {
             Instantiate(asteroids[Random.Range(0, asteroids.Length)], temp, Quaternion.identity);
+        } else {
+            Instantiate(enemies[Random.Range(0, enemies.Length)], temp, Quaternion.identity);
+        }
+            
         
       
         Invoke("Spawn", timer);
