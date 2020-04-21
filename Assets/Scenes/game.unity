@@ -312,7 +312,6 @@ GameObject:
   - component: {fileID: 261655595}
   - component: {fileID: 261655594}
   - component: {fileID: 261655593}
-  - component: {fileID: 261655592}
   - component: {fileID: 261655591}
   m_Layer: 0
   m_Name: Background
@@ -330,24 +329,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 261655590}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f03c51741faada947aa87b5098c483cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e7838be2d1d35248a6333ff943069fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scroll_speed: 0.5
---- !u!64 &261655592
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261655590}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  speed: 0.25
+  rend: {fileID: 261655593}
 --- !u!23 &261655593
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scroll : MonoBehaviour
+public class scrolling : MonoBehaviour
 {
     public float speed;
     public Renderer rend;

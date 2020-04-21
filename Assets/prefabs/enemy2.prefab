@@ -177,7 +177,7 @@ MonoBehaviour:
   enemyBullet: {fileID: 5584530427418619745, guid: 059ea74c140f90e4ca9b6e612b64044d,
     type: 3}
   weapon: {fileID: 7400784007942724511}
-  explosion: {fileID: 139366, guid: 8fcf104d45b63a840b348256a057156a, type: 3}
+  explosion: {fileID: 139366, guid: 074c6b22a17c5c140a019156fa114211, type: 3}
   explosionSound: {fileID: 8286008529304507017}
   enemyWeaponSound: {fileID: 1696040483}
   bound_X: -11
