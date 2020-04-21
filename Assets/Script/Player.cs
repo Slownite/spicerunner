@@ -19,10 +19,15 @@ public class Player : MonoBehaviour
     private float current_attack_timer;
     private bool canAttack;
 
+    public AudioSource weaponFire;
+    public AudioSource engineSound;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        engineSound.Play();
+        current_attack_timer = attack_timer;
         healthBar.setMaxHealth(health);
         healthBar.setHealth(health);
     }
@@ -93,7 +98,7 @@ public class Player : MonoBehaviour
             {
                 canAttack = false;
                 attack_timer = 0f;
-
+                weaponFire.Play();
                 Instantiate(bullet, weapon.position, Quaternion.identity);
             }
         }
