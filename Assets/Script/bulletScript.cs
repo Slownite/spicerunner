@@ -24,6 +24,11 @@ public class bulletScript : MonoBehaviour
         Move();
     }
 
+    public void make_damage(Player obj)
+    {
+        obj.health -= damage;
+    }
+
     void Move()
     {
         Vector2 temp = transform.position;

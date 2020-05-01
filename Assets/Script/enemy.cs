@@ -88,7 +88,12 @@ public class enemy : MonoBehaviour
             make_damage(collision.gameObject.GetComponent<Player>());
             Destroy(gameObject);
         }
+        if (collision.gameObject.tag == "enemyBullet")
+        {
+            make_damage(FindObjectOfType<Player>());
+        }
     }
+
     private void die()
     {
         if (health <= 0)

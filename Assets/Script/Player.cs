@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     public float attack_timer = 4.0f;
     private float current_attack_timer;
     private bool canAttack;
+    public int damage = 10;
 
     public AudioSource weaponFire;
     public AudioSource engineSound;
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour
         current_attack_timer = attack_timer;
         healthBar.setMaxHealth(health);
         healthBar.setHealth(health);
+        loadPlayerData(); 
     }
 
     // Update is called once per frame
@@ -117,5 +119,17 @@ public class Player : MonoBehaviour
         {
             FindObjectOfType<gameHandling>().gameOverBool = true;
         }
+    }
+    //TODOFIX
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "enemyBullet")
+        {
+            make_damage(this);
+        }
+    }
+    public void make_damage(Player obj)
+    {
+        obj.health -= damage;
     }
 }
