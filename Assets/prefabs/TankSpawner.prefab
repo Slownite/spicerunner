@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2279062643085745582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3713946590372712036}
+  - component: {fileID: 4076561233123713030}
+  m_Layer: 0
+  m_Name: TankSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3713946590372712036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2279062643085745582}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.659057, y: -1.4459158, z: -17.90625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4076561233123713030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2279062643085745582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc61e26148994b9ea5f1fed2ba86f093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  counter: 0
+  spawnerSettings:
+  - name: Tank
+    prefab: {fileID: 6280006342722810922, guid: ecb730b151cde1746bfc14617d9583ae,
+      type: 3}
+    delay: 1
+    interval: 3
+    count: 1
+    trackProgress: 1
+    layerSettings:
+      enabled: 0
+      mode: 0
+      value: 0
+  loopSettings:
+    interval: 1
+    count: 3
+    index: 0
+  additionalSettings:
+    camera: {fileID: 0}
+    screenBounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    height: 1.36

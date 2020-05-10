@@ -153,6 +153,13 @@ namespace Playniax.Ignition.SpriteSystem
 
             public bool boundaries = true;
 
+            private bool facingRight;
+
+            void Start()
+            {
+                facingRight = true;
+            }
+
             public void Update(PlayerControls playerControls)
             {
                 var h = Input.GetAxis(horizontal);
@@ -161,6 +168,7 @@ namespace Playniax.Ignition.SpriteSystem
                 playerControls.gameObject.transform.position += new Vector3(h, v) * Time.deltaTime * speed * playerControls.speed;
 
                 if (boundaries && playerControls.additionalSettings.bounds != default) _Bounds(playerControls);
+                if (Input.GetKeyDown(KeyCode.J)) Flip(h, playerControls);
             }
 
             void _Bounds(PlayerControls playerControls)
@@ -186,6 +194,23 @@ namespace Playniax.Ignition.SpriteSystem
                 }
 
                 playerControls.gameObject.transform.position = position;
+            }
+
+            private void Flip(float horizontal, PlayerControls playerControls)
+            {
+                if(facingRight)
+                {
+                    facingRight = false;
+                    Quaternion theRotation = playerControls.gameObject.transform.localRotation;
+                    theRotation.y = 180;
+                    playerControls.gameObject.transform.localRotation = theRotation;
+                } else if(!facingRight){
+                    facingRight = true;
+                    Quaternion theRotation = playerControls.gameObject.transform.localRotation;
+                    theRotation.y = 0;
+                    playerControls.gameObject.transform.localRotation = theRotation;
+                }
+
             }
         }
 
