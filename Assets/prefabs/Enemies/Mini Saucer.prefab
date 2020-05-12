@@ -170,6 +170,16 @@ MonoBehaviour:
     mode: 0
   ghostMaterial: {fileID: 2100000, guid: bb7b330a3d22c9f4f9e1d0fab8c1c266, type: 2}
   countLivesEnabled: -1
+  linePiece: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  pieces:
+  - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
+  - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
+  - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
+  - {fileID: 3926335052716745809, guid: b0ee47e0051f2d840b60d37d7ee20a86, type: 3}
+  - {fileID: 8345928657330094986, guid: f04dd2385676dde48af34d3565ac390e, type: 3}
+  - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
+  - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
 --- !u!114 &4420990997074344460
 MonoBehaviour:
   m_ObjectHideFlags: 0

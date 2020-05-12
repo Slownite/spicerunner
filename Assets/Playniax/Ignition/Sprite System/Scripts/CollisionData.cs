@@ -192,7 +192,10 @@ namespace Playniax.Ignition.SpriteSystem
         [HideInInspector]
         public int countLivesEnabled = -1;
 
-        Health healthBar;
+        public GameObject linePiece;
+        public Transform spawnLocation;
+
+        public GameObject[] pieces = new GameObject[7];
 
         public override void Awake()
         {
@@ -208,18 +211,6 @@ namespace Playniax.Ignition.SpriteSystem
 
             if (points == 0) points = structuralIntegrity * autoPoints;
         }
-
-        private void Start()
-        {
-            healthBar.setMaxHealth(structuralIntegrity);
-            healthBar.setHealth(structuralIntegrity);
-        }
-
-        private void Update()
-        {
-            healthBar.setHealth(structuralIntegrity);
-        }
-
 
         public override bool AllowCollision()
         {
@@ -268,8 +259,6 @@ namespace Playniax.Ignition.SpriteSystem
             collisionData._Ghost();
 
             if ((structuralIntegrity > 0 || collisionData.structuralIntegrity > 0) && material != "" && collisionData.material != "") CollisionAudio.Play(material, collisionData.material);
-
-            healthBar.setHealth(collisionData.structuralIntegrity);
 
         }
 
@@ -331,18 +320,16 @@ namespace Playniax.Ignition.SpriteSystem
             {
                 Destroy();
             }
-        }
+            int pieceSpawn = UnityEngine.Random.Range(0, 7);
+            GameObject pickup = Instantiate(pieces[UnityEngine.Random.Range(0, 6)], transform.position, Quaternion.identity) as GameObject;
+            pickup.name = pickup.name.Replace("(Clone)", "");
+            }
 
         public int GetInitialStructuralIntegrity()
         {
             if (_structuralIntegrity == 0) _structuralIntegrity = structuralIntegrity;
 
             return _structuralIntegrity;
-        }
-
-        public int GetStructuralIntegrity()
-        {
-            return structuralIntegrity;
         }
 
         Material _defaultMaterial;

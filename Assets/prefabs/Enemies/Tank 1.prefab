@@ -406,6 +406,16 @@ MonoBehaviour:
     mode: 0
   ghostMaterial: {fileID: 0}
   countLivesEnabled: -1
+  linePiece: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  pieces:
+  - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
+  - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
+  - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
+  - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
+  - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
+  - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
+  - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
 --- !u!114 &7153697433878393517
 MonoBehaviour:
   m_ObjectHideFlags: 0

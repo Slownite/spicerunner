@@ -29,8 +29,8 @@ public class Player : MonoBehaviour
     {
         engineSound.Play();
         current_attack_timer = attack_timer;
-        healthBar.setMaxHealth(health);
-        healthBar.setHealth(health);
+        //healthBar.setMaxHealth(health);
+        //healthBar.setHealth(health);
         loadPlayerData(); 
     }
 
