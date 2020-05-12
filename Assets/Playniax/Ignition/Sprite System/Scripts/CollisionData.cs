@@ -321,7 +321,7 @@ namespace Playniax.Ignition.SpriteSystem
                 Destroy();
             }
             int pieceSpawn = UnityEngine.Random.Range(0, 7);
-            GameObject pickup = Instantiate(pieces[UnityEngine.Random.Range(0, 6)], transform.position, Quaternion.identity) as GameObject;
+            GameObject pickup = Instantiate(pieces[UnityEngine.Random.Range(0, 10)], transform.position, Quaternion.identity) as GameObject;
             pickup.name = pickup.name.Replace("(Clone)", "");
             }
 

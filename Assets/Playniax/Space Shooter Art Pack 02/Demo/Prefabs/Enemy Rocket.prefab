@@ -52,6 +52,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -247,6 +248,9 @@ MonoBehaviour:
     mode: 0
   ghostMaterial: {fileID: 2100000, guid: bb7b330a3d22c9f4f9e1d0fab8c1c266, type: 2}
   countLivesEnabled: -1
+  linePiece: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  pieces: []
 --- !u!114 &8476050201077108235
 MonoBehaviour:
   m_ObjectHideFlags: 0

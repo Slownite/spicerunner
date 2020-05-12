@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6393157181188824019}
   - component: {fileID: 9000814965118703265}
   - component: {fileID: 6148332537959844576}
+  - component: {fileID: 9019380961467298932}
   m_Layer: 0
   m_Name: Enemy Bullet Blue
   m_TagString: Untagged
@@ -51,6 +52,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -178,7 +180,7 @@ MonoBehaviour:
   group: Enemy Bullet
   collisionEnabled: 1
   spriteRenderer: {fileID: 0}
-  generateBoxColliderWhenColliderMissing: 0
+  generateBoxCollider: 1
   playerIndex: -1
   structuralIntegrity: 20
   points: 0
@@ -191,7 +193,7 @@ MonoBehaviour:
     emitterGroupScale: 0.5
     layerSettings:
       mode: 0
-      offset: 1
+      value: 1
     messengerSettings:
       ttl: 3
       text: 
@@ -210,6 +212,9 @@ MonoBehaviour:
     mode: 0
   ghostMaterial: {fileID: 0}
   countLivesEnabled: -1
+  linePiece: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  pieces: []
 --- !u!114 &6148332537959844576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,3 +227,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92c6e9deb4d8bc4ab85c3c25f9eab39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9019380961467298932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4995094551201120871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eef177d7baea974dbe4795d47bedf55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioProperties:
+    audioClip: {fileID: 8300000, guid: 9bfb4142963f6c44d9d82a7a24afa2d1, type: 3}
+    volumeScale: 1
+    panStereo: 0
+    pitch: 1
+    enabled: 1

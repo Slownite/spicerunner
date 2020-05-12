@@ -12,7 +12,6 @@ public class Health : MonoBehaviour
     public void Start()
     {
         healthBar.maxValue = 1000;
-        //healthBar.maxValue = health;
         healthBar.value = 1000;
         
     }

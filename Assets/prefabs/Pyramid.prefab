@@ -277,6 +277,9 @@ MonoBehaviour:
     mode: 0
   ghostMaterial: {fileID: 2100000, guid: bb7b330a3d22c9f4f9e1d0fab8c1c266, type: 2}
   countLivesEnabled: -1
+  linePiece: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  pieces: []
 --- !u!114 &1408005283674453247
 MonoBehaviour:
   m_ObjectHideFlags: 0

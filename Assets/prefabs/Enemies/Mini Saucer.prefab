@@ -180,6 +180,9 @@ MonoBehaviour:
   - {fileID: 8345928657330094986, guid: f04dd2385676dde48af34d3565ac390e, type: 3}
   - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
   - {fileID: 5904018880326399629, guid: c07f5460f16c03845914c49ba0b34504, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &4420990997074344460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab72df1f2bbc684e9a23e9e28a23a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 1
+  mode: 2
   cruiserSettings:
     minSpeed: 2
     maxSpeed: 4

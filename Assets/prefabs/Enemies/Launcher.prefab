@@ -162,6 +162,9 @@ MonoBehaviour:
     mode: 0
   ghostMaterial: {fileID: 2100000, guid: bb7b330a3d22c9f4f9e1d0fab8c1c266, type: 2}
   countLivesEnabled: -1
+  linePiece: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  pieces: []
 --- !u!114 &20242979743677221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,7 +226,8 @@ MonoBehaviour:
     interval: 3
   height: 1.1
   additionalSettings:
-    camera: {fileID: 0}
+    camera: {fileID: 2447482481704522324, guid: 2892f5134d363f54c93fabdf44000932,
+      type: 3}
     screenBounds:
       m_Center: {x: 0, y: 0, z: 0}
       m_Extent: {x: 0, y: 0, z: 0}

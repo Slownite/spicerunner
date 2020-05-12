@@ -48,6 +48,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -130,7 +131,7 @@ MonoBehaviour:
   group: Player
   collisionEnabled: 1
   spriteRenderer: {fileID: 0}
-  generateBoxColliderWhenColliderMissing: 0
+  generateBoxCollider: 1
   playerIndex: -1
   structuralIntegrity: 1000
   points: 0
@@ -143,7 +144,7 @@ MonoBehaviour:
     emitterGroupScale: 1
     layerSettings:
       mode: 0
-      offset: 1
+      value: 1
     messengerSettings:
       ttl: 3
       text: 
@@ -152,7 +153,7 @@ MonoBehaviour:
       velocity: {x: 0, y: 0.25, z: 0}
       enabled: 0
     audioSettings:
-      audioClip: {fileID: 0}
+      audioClip: {fileID: 8300000, guid: 208b6897da006af49bb0cd92cdc47963, type: 3}
       volumeScale: 1
       panStereo: 0
       pitch: 1
@@ -162,3 +163,6 @@ MonoBehaviour:
     mode: 0
   ghostMaterial: {fileID: 0}
   countLivesEnabled: -1
+  linePiece: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  pieces: []

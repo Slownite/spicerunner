@@ -51,6 +51,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -178,7 +179,7 @@ MonoBehaviour:
   group: Enemy Bullet
   collisionEnabled: 1
   spriteRenderer: {fileID: 0}
-  generateBoxColliderWhenColliderMissing: 0
+  generateBoxCollider: 1
   playerIndex: -1
   structuralIntegrity: 25
   points: 0
@@ -191,7 +192,7 @@ MonoBehaviour:
     emitterGroupScale: 0.5
     layerSettings:
       mode: 0
-      offset: 1
+      value: 1
     messengerSettings:
       ttl: 3
       text: 
@@ -210,6 +211,9 @@ MonoBehaviour:
     mode: 0
   ghostMaterial: {fileID: 0}
   countLivesEnabled: -1
+  linePiece: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  pieces: []
 --- !u!114 &3593724874136853041
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5178360863944213303}
   - component: {fileID: 222308902116725244}
   - component: {fileID: 7813285396323324762}
+  - component: {fileID: 8041605259973761972}
   m_Layer: 0
   m_Name: Player Bullet Purple
   m_TagString: Untagged
@@ -49,6 +50,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -158,7 +160,7 @@ MonoBehaviour:
   group: Player Bullet
   collisionEnabled: 1
   spriteRenderer: {fileID: 0}
-  generateBoxColliderWhenColliderMissing: 0
+  generateBoxCollider: 1
   playerIndex: 0
   structuralIntegrity: 90
   points: 0
@@ -171,7 +173,7 @@ MonoBehaviour:
     emitterGroupScale: 0.25
     layerSettings:
       mode: 0
-      offset: 1
+      value: 1
     messengerSettings:
       ttl: 3
       text: 
@@ -190,3 +192,24 @@ MonoBehaviour:
     mode: 0
   ghostMaterial: {fileID: 0}
   countLivesEnabled: -1
+  linePiece: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  pieces: []
+--- !u!114 &8041605259973761972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4995094551201120871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eef177d7baea974dbe4795d47bedf55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioProperties:
+    audioClip: {fileID: 8300000, guid: 6af46648705ca53449cf1e5559691b28, type: 3}
+    volumeScale: 1
+    panStereo: 0
+    pitch: 1
+    enabled: 1
