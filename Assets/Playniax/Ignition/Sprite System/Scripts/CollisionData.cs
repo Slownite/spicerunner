@@ -185,11 +185,14 @@ namespace Playniax.Ignition.SpriteSystem
         public OutroSettings outroSettings;
         public CargoSettings cargoSettings;
 
+
         [Space(8)][Tooltip("Impact shader.")]
         public Material ghostMaterial;
 
         [HideInInspector]
         public int countLivesEnabled = -1;
+
+        Health healthBar;
 
         public override void Awake()
         {
@@ -205,6 +208,18 @@ namespace Playniax.Ignition.SpriteSystem
 
             if (points == 0) points = structuralIntegrity * autoPoints;
         }
+
+        private void Start()
+        {
+            healthBar.setMaxHealth(structuralIntegrity);
+            healthBar.setHealth(structuralIntegrity);
+        }
+
+        private void Update()
+        {
+            healthBar.setHealth(structuralIntegrity);
+        }
+
 
         public override bool AllowCollision()
         {
@@ -223,6 +238,7 @@ namespace Playniax.Ignition.SpriteSystem
             var a = structuralIntegrity;
             var b = collisionData.structuralIntegrity;
 
+
             if (indestructible && collisionData.indestructible) print("oops");
 
             if (indestructible)
@@ -240,6 +256,8 @@ namespace Playniax.Ignition.SpriteSystem
             structuralIntegrity -= b;
             collisionData.structuralIntegrity -= a;
 
+
+
             if (structuralIntegrity < 0) structuralIntegrity = 0;
             if (collisionData.structuralIntegrity < 0) collisionData.structuralIntegrity = 0;
 
@@ -250,6 +268,9 @@ namespace Playniax.Ignition.SpriteSystem
             collisionData._Ghost();
 
             if ((structuralIntegrity > 0 || collisionData.structuralIntegrity > 0) && material != "" && collisionData.material != "") CollisionAudio.Play(material, collisionData.material);
+
+            healthBar.setHealth(collisionData.structuralIntegrity);
+
         }
 
         void _Ghost()
@@ -317,6 +338,11 @@ namespace Playniax.Ignition.SpriteSystem
             if (_structuralIntegrity == 0) _structuralIntegrity = structuralIntegrity;
 
             return _structuralIntegrity;
+        }
+
+        public int GetStructuralIntegrity()
+        {
+            return structuralIntegrity;
         }
 
         Material _defaultMaterial;

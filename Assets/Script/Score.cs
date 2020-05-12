@@ -1,6 +1,7 @@
 ﻿
 using TMPro;
 using UnityEngine;
+using Playniax.Ignition.Framework;
 
 public class Score : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class Score : MonoBehaviour
     }
     void Update()
     {
-        text.text = player.gold.ToString();
+        text.text = PlayerData.Get(0).scoreboard.ToString();
     }
 
 }
