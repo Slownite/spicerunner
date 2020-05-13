@@ -9,8 +9,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 225a1f5394f815e4f971ce8726649cd7
   - enabled: 1
-    path: Assets/Scenes/game.unity
-    guid: 5c9f02ee8e9965c40b1d425081780773
+    path: Assets/Scenes/Easy.unity
+    guid: fcc03ddbd2d5c914dbe583a51c9c251d
+  - enabled: 1
+    path: Assets/Scenes/Boss1.unity
+    guid: 8a9135ecfe61410a918e308ebc925d2d
+  - enabled: 1
+    path: Assets/Scenes/Scene1.unity
+    guid: e888e3674d47d674c83e0764e4015861
+  - enabled: 1
+    path: Assets/Scenes/Boss2.unity
+    guid: 9a7b6c3f31a6aa3468b5dd325910bbdd
+  - enabled: 1
+    path: Assets/Scenes/Hard.unity
+    guid: ed7b921ee804fca44b83c85541c6526b
+  - enabled: 1
+    path: Assets/Scenes/Boss3.unity
+    guid: 013496e416ebf1d4e89a4cee4a1cd7ec
+  - enabled: 0
+    path: Assets/Scenes/Background Generator.unity
+    guid: dcfdd756351742842b05f340bef4e7bb
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 93971afd1b61b984eb0f7ffe641db0c1

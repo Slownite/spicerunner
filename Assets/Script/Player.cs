@@ -117,7 +117,7 @@ public class Player : MonoBehaviour
     {
         if(health<=0)
         {
-            FindObjectOfType<gameHandling>().gameOverBool = true;
+            
         }
     }
     //TODOFIX

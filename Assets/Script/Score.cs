@@ -14,6 +14,7 @@ public class Score : MonoBehaviour
     void Update()
     {
         text.text = PlayerData.Get(0).scoreboard.ToString();
+        Debug.Log(PlayerData.Get(0).scoreboard);
     }
 
 }

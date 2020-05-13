@@ -1,19 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using Playniax.Ignition.Framework;
+using Playniax.Ignition.SpriteSystem;
+
 
 public class gameHandling : MonoBehaviour
 {
-    public Player player;
-    public bool gameOverBool;
-    public bool endLevel;
+    public int score_next_scene;
     // Start is called before the first frame update
-    void Start()
-    {
-        gameOverBool = false;
-        endLevel = false;
-    }
     void Update()
     {
         gameOver();
@@ -21,23 +15,18 @@ public class gameHandling : MonoBehaviour
     }
     public void gameOver()
     {
-        if (gameOverBool)
+        
+        if (GameObject.Find("Player") == null || GameObject.Find("Player").GetComponent<CollisionData>().structuralIntegrity <= 0)
         {
-            int level = SceneManager.GetActiveScene().buildIndex;
-            Save.SaveGame(player, level);
-            Info info = FindObjectOfType<Info>();
-            info.gold = player.gold;
-            SceneManager.LoadScene(level+1);
+            int level = SceneManager.GetSceneByPath("Assets/Scenes/GameOver.unity").buildIndex;
+            SceneManager.LoadScene(7);
         }
     }
     public void nextLevel()
     {
-        if (endLevel)
+        if (PlayerData.Get(0).scoreboard >= score_next_scene)
         {
             int level =  SceneManager.GetActiveScene().buildIndex;
-            Save.SaveGame(player, level);
-            Info info = FindObjectOfType<Info>();
-            info.gold = player.gold;
             SceneManager.LoadScene(level + 1);
         }
     }
