@@ -226,13 +226,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1346045914595257829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ab72df1f2bbc684e9a23e9e28a23a43, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b149d8a82cf73e449eb538f959cf1ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 3
+  mode: 0
   cruiserSettings:
-    minSpeed: 2
-    maxSpeed: 4
+    minSpeed: 10
+    maxSpeed: 20
     minReflex: 1
     maxReflex: 3
     timer: 0
@@ -248,5 +248,5 @@ MonoBehaviour:
     maxSpeed: 160
     friction: 1
   tailerSettings:
-    speed: 10
-  target: {fileID: 743882314005243625, guid: c7e732c5003bee84594d7624c2f5dbe5, type: 3}
+    speed: 1
+  target: {fileID: 0}

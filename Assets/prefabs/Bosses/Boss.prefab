@@ -15,14 +15,14 @@ GameObject:
   - component: {fileID: 964248094687581164}
   - component: {fileID: 964248094687581155}
   - component: {fileID: 964248094687581160}
-  - component: {fileID: 8328174139427426220}
+  - component: {fileID: 4367967195604511297}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &964248094687581165
 Transform:
   m_ObjectHideFlags: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   generateBoxCollider: 1
   playerIndex: -1
   structuralIntegrity: 6000
-  points: 0
+  points: 10000
   indestructible: 0
   checkVisibility: 1
   dontDestroyOnImpact: 0
@@ -178,14 +178,7 @@ MonoBehaviour:
   countLivesEnabled: -1
   linePiece: {fileID: 0}
   spawnLocation: {fileID: 0}
-  pieces:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  pieces: []
 --- !u!114 &964248094687581155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,7 +580,7 @@ MonoBehaviour:
     speed: 16
     effectPrefab: {fileID: 5435985709743468474, guid: f805d553a90d4fba88fd06bef5f42ff3,
       type: 3}
---- !u!114 &8328174139427426220
+--- !u!114 &4367967195604511297
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -596,7 +589,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 964248094687581161}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ab72df1f2bbc684e9a23e9e28a23a43, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b149d8a82cf73e449eb538f959cf1ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 0
@@ -614,11 +607,11 @@ MonoBehaviour:
     globalPolarity: 1
     range: 5
     polarity: 1
-    speed: 2
-    maxSpeed: 20
+    speed: 10
+    maxSpeed: 160
     friction: 1
   tailerSettings:
-    speed: 0.1
+    speed: 1
   target: {fileID: 0}
 --- !u!1 &964248094775861992
 GameObject:

@@ -1232,6 +1232,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1232975763267013865, guid: 492e69d3613edbb4b9c2e0e82eeeaa8e,
+        type: 3}
+      propertyPath: score_next_scene
+      value: 80000
+      objectReference: {fileID: 0}
     - target: {fileID: 4096208475297558838, guid: 492e69d3613edbb4b9c2e0e82eeeaa8e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1756,7 +1761,7 @@ PrefabInstance:
     - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
         type: 3}
       propertyPath: spawnerSettings.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
         type: 3}
@@ -1906,7 +1911,7 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnerSettings.Array.data[4].prefab
       value: 
-      objectReference: {fileID: 4245222691136561253, guid: 7b8dfdd8252fd0b429e002557d572df0,
+      objectReference: {fileID: 1785379981636908661, guid: 73ac96a693ea1f24a8ed710e5a136e80,
         type: 3}
     - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
         type: 3}
@@ -1932,6 +1937,78 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnerSettings.Array.data[0].name
       value: Mini Saucer
+      objectReference: {fileID: 0}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[5].name
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[5].prefab
+      value: 
+      objectReference: {fileID: 4245222691136561253, guid: 7b8dfdd8252fd0b429e002557d572df0,
+        type: 3}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[5].delay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[5].interval
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[5].count
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[5].trackProgress
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[5].startPosition
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[6].name
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[6].prefab
+      value: 
+      objectReference: {fileID: 6964297886582818674, guid: 7eb7f936c5c1a3641b4b41abf46b6206,
+        type: 3}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[6].delay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[6].interval
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[6].count
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[6].trackProgress
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
+        type: 3}
+      propertyPath: spawnerSettings.Array.data[6].startPosition
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 463805749621403287, guid: b107d6d532abfb94796ce012c2307f99,
         type: 3}

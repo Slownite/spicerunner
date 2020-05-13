@@ -216,10 +216,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8870140789827835332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ab72df1f2bbc684e9a23e9e28a23a43, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b149d8a82cf73e449eb538f959cf1ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 2
+  mode: 1
   cruiserSettings:
     minSpeed: 2
     maxSpeed: 4

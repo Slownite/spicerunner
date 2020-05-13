@@ -70,7 +70,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8122007610416605346
 Transform:
   m_ObjectHideFlags: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
   generateBoxCollider: 1
   playerIndex: -1
   structuralIntegrity: 3000
-  points: 0
+  points: 10000
   indestructible: 0
   checkVisibility: 1
   dontDestroyOnImpact: 0
@@ -229,6 +229,9 @@ MonoBehaviour:
     mode: 0
   ghostMaterial: {fileID: 0}
   countLivesEnabled: -1
+  linePiece: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  pieces: []
 --- !u!114 &8122007610416605348
 MonoBehaviour:
   m_ObjectHideFlags: 0

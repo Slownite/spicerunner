@@ -132,6 +132,16 @@ MonoBehaviour:
     mode: 0
   ghostMaterial: {fileID: 2100000, guid: bb7b330a3d22c9f4f9e1d0fab8c1c266, type: 2}
   countLivesEnabled: -1
+  linePiece: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  pieces:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1114013750239269899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +302,16 @@ MonoBehaviour:
     mode: 0
   ghostMaterial: {fileID: 2100000, guid: bb7b330a3d22c9f4f9e1d0fab8c1c266, type: 2}
   countLivesEnabled: -1
+  linePiece: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  pieces:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1114013751441706183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,6 +355,7 @@ GameObject:
   - component: {fileID: 1114013751794906847}
   - component: {fileID: 1114013751794906846}
   - component: {fileID: 1114013751794906843}
+  - component: {fileID: 5673131093210584283}
   m_Layer: 0
   m_Name: Mini Boss
   m_TagString: Untagged
@@ -846,8 +867,8 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   generateBoxCollider: 1
   playerIndex: -1
-  structuralIntegrity: 2000
-  points: 0
+  structuralIntegrity: 1500
+  points: 10000
   indestructible: 0
   checkVisibility: 1
   dontDestroyOnImpact: 0
@@ -876,6 +897,9 @@ MonoBehaviour:
     mode: 0
   ghostMaterial: {fileID: 2100000, guid: bb7b330a3d22c9f4f9e1d0fab8c1c266, type: 2}
   countLivesEnabled: -1
+  linePiece: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  pieces: []
 --- !u!114 &1114013751794906843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,3 +912,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92c6e9deb4d8bc4ab85c3c25f9eab39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5673131093210584283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114013751794906657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b149d8a82cf73e449eb538f959cf1ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  cruiserSettings:
+    minSpeed: 5
+    maxSpeed: 4
+    minReflex: 1
+    maxReflex: 3
+    timer: 0
+  homingMissileSettings:
+    intro: 0
+    speed: 8
+    rotationSpeed: 250
+  magnetSettings:
+    globalPolarity: 1
+    range: 5
+    polarity: 1
+    speed: 10
+    maxSpeed: 160
+    friction: 1
+  tailerSettings:
+    speed: 1
+  target: {fileID: 0}

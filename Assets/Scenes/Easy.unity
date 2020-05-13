@@ -374,7 +374,7 @@ PrefabInstance:
     - target: {fileID: 1232975763267013865, guid: 492e69d3613edbb4b9c2e0e82eeeaa8e,
         type: 3}
       propertyPath: score_next_scene
-      value: 5000
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 4096208475297558838, guid: 492e69d3613edbb4b9c2e0e82eeeaa8e,
         type: 3}
@@ -1521,7 +1521,7 @@ PrefabInstance:
     - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
         type: 3}
       propertyPath: spawnerSettings.Array.data[1].startPosition
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 463805749621403286, guid: b107d6d532abfb94796ce012c2307f99,
         type: 3}
